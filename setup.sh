@@ -29,5 +29,25 @@ then
 	wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O .git-completion.sh
 fi
 
+if [[ ! -d ~/.nvm ]]
+then
+	wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+fi
+
+if [[ ! -d ~/.vim/bundle ]]
+then
+	mkdir -p ~/.vim/bundle
+	cd ~/.vim/bundle
+	git clone https://github.com/scrooloose/nerdtree.git
+fi
+
+if [[ ! -d ~/.vim/colors ]]
+then
+	mkdir -p ~/.vim/colors
+	cd ~/.vim/colors
+	git clone git@github.com:Lokaltog/vim-distinguished.git
+	mv vim-distinguished/colors/distinguished.vim ./
+	rm -rf vim-distinguished
+fi
 cd $confighome
-echo 'consider running : echo "source ~/.bashrc_luke" >> ~/.bashrc'
+echo '~~~~ Consider running: echo "source ~/.bashrc_luke" >> ~/.bashrc'
