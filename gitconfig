@@ -1,0 +1,33 @@
+[user]
+	email = stanford.luke.nz@gmail.com
+	name = Luke
+[color]
+
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[alias]
+  	st = status
+  	ci = commit
+  	co = checkout
+  	f = fetch -p --recurse-submodules
+  	rb = rebase
+  	m = merge --no-ff
+  	d = diff
+  	ds = diff --staged
+  	up = pull --rebase
+  	pu = push origin HEAD
+  	lp = log -p 
+  	lpn = log -p -n 
+  	l = log --graph --tags --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit 
+  	b = branch
+  	bm = branch --merged
+  	bmd = !git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d
+  	remove-merged-branches = !git f && git bmd
+[core]
+	editor = vim
+        quotepath = false
+        trustctime = false
+[push]
+	default = simple
