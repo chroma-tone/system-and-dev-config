@@ -7,6 +7,7 @@ rm ~/.vimrc && rm ~/.bashrc_luke && rm ~/.gitconfig
 ln -s $confighome/vimrc ~/.vimrc
 ln -s $confighome/bashrc ~/.bashrc_luke
 ln -s $confighome/gitconfig ~/.gitconfig
+ln -s $confighome/tmux.conf ~/.tmux.conf
 
 echo "~~~ Configuring ssh key"
 cd ~

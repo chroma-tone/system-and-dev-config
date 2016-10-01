@@ -4,3 +4,4 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
 source ~/.git-completion.sh
 export TERM=xterm-256color
+alias gti=git
