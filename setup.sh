@@ -8,6 +8,8 @@ ln -s $confighome/vimrc ~/.vimrc
 ln -s $confighome/bashrc ~/.bashrc_luke
 ln -s $confighome/gitconfig ~/.gitconfig
 ln -s $confighome/tmux.conf ~/.tmux.conf
+mkdir -p ~/.config/fish/functions/
+ln -s $confighome/start_agent.fish ~/.config/fish/functions/start_agent.fish
 
 echo "~~~ Configuring ssh key"
 cd ~
