@@ -50,7 +50,7 @@ if [[ ! -d ~/.vim/colors ]]
 then
 	mkdir -p ~/.vim/colors
 	cd ~/.vim/colors
-	git clone git@github.com:Lokaltog/vim-distinguished.git
+	git clone https://github.com/Lokaltog/vim-distinguished.git
 	mv vim-distinguished/colors/distinguished.vim ./
 	rm -rf vim-distinguished
 fi
