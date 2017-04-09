@@ -10,7 +10,7 @@ ln -s $confighome/gitconfig ~/.gitconfig
 ln -s $confighome/tmux.conf ~/.tmux.conf
 mkdir -p ~/.config/fish/functions/
 ln -s $confighome/start_agent.fish ~/.config/fish/functions/start_agent.fish
-
+ln -s $confighome/config.fish ~/.config/fish/config.fish
 echo "~~~ Configuring ssh key"
 cd ~
 if [[ ! -d .ssh ]]
